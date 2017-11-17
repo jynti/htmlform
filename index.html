@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My page</title>
+  <style>
+    #contact{
+      padding-left: 30px;
+      margin-bottom: 10px;
+    }
+    #note{
+      color:red;
+    }
+    #container {
+      background-color: #AAAAAA;
+      margin: auto;
+      width:60%;
+      padding: 10px;
+    }
+    .otherfields{
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+<div id="container">
+<h2 style="text-align: center;">HTML form exercise</h2>
+<p><span id="note">Please note:</span> This example demonstrate how HTML forms can be used. Submit button should submit the button and reset button should reset the form(revert the changes in form fields). The form layout should be the same as below.</p>
+<form action="#" method="POST">
+  <h4 id="contact">Contact Form:</h4>
+    <table>
+      <tr>
+          <td><label>Your name*:</label></td>
+          <td><input type="text" name="username" required></td>
+      </tr>
+      <tr>
+          <td><label>E-mail*:</label></td>
+          <td><input type="email" name="useremail" required></td>
+      </tr>
+      <tr>
+          <td><label>Phone number:</label></td>
+          <td><input type="tel" name="usertel"></td>
+      </tr>
+      <tr>
+          <td><label>Website*:</label></td>
+          <td><input type="url" name="userurl" value="http://" size = "30" required></td>
+      </tr>
+    </table>
+
+    <p>Comments*:<br>
+    <textarea name="comment" rows="10" cols="50" required></textarea>
+    </p>
+
+    <h4 class="otherfields">Text field</h4>
+    <label>Your name:</label>
+    <input type="text" name="name">
+
+    <h4 class="otherfields">Password field</h4>
+    <label>Passsword:</label>
+    <input type="passsword" name="pswd">
+
+    <h4 class="otherfields">Radio buttons</h4>
+    <label>Do you like pizza?</label><br>
+    <input type="radio" name="pizza" value="Yes" checked>Yes<br>
+    <input type="radio" name="pizza" value="No">No<br>
+    <input type="radio" name="pizza" value="Maybe">Maybe<br>
+    <input type="radio" name="pizza" value="Never tried">Never tried<br>
+
+    <h4 class="otherfields">Check Box</h4>
+    <input type="checkbox" name="checkbox">Check this box if you like our service
+
+    <h4 class="otherfields">Text area</h4>
+    <p>Anything you would like to say?<br>
+    <textarea name="othercomment" rows="8" cols="60"></textarea>
+    </p>
+
+    <h4 class="otherfields">I Like</h4>
+    <select name="toppings" size="5">
+      <option value="mushrooms">mushrooms</option>
+      <option value="green peppers">green peppers</option>
+      <option value="onions">onions</option>
+      <option value="tomatoes">tomatoes</option>
+      <option value="olives">olives</option>
+    </select>
+
+    <h4 class="otherfields">Menu</h4>
+    <label>Your favourite color:</label><br>
+     <select name="colors">
+      <option value="red">red</option>
+      <option value="green">green</option>
+      <option value="blue">blue</option>
+      <option value="yellow">yellow</option>
+     </select>
+
+     <h4 class="otherfields">Attach file</h4>
+     <input type="text" name="textfield">
+     <input type="file" name="browse">
+
+     <h4 class="otherfields">Buttons</h4>
+     <input type="submit" value="Submit">
+    <input type="reset">
+  </form>
+  </div>
+</body>
+</html>
